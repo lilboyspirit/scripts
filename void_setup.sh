@@ -24,7 +24,7 @@ doas make clean install
 cd ../st
 doas make clean install
 
-echo 'exec dwm' > ~/.xinitrc
+echo 'exec dwm' > $HOME/.xinitrc
 
 # update system
 doas xbps-install -Suy
