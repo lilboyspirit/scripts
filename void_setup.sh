@@ -32,3 +32,5 @@ echo 'exec dwm' > $HOME/.xinitrc
 doas xbps-install -Suy
 # install other packages
 doas xbps-install -y wget curl yt-dlp vim firefox vscode
+
+doas reboot
