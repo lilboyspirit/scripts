@@ -7,6 +7,8 @@ sudo xbps-install -Suy xbps
 sudo xbps-install -y opendoas
 sudo bash -c "echo 'permit nopass spirit as root' > /etc/doas.conf"
 
+# update deps to avoid conflicts
+doas xbps-install -yu util-linux
 # install deps required for setup
 doas xbps-install -y git rsync make gcc libX11-devel libXft-devel libXinerama-devel xorg-server xinit xauth xorg-fonts xorg-input-drivers pkg-config
 
