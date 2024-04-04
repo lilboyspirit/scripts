@@ -36,6 +36,14 @@ echo 'exec dwm' > $HOME/.xinitrc
 # update system
 doas xbps-install -Suy
 # install other packages
-doas xbps-install -y wget curl yt-dlp vim firefox vscode
+doas xbps-install -y wget curl juliaup yt-dlp vim firefox vscode
+
+doas ln -s /usr/bin/julialauncher /usr/bin/julia
+
+juliaup self update
+juliaup add 1.0.0
+juliaup add 1.10
+juliaup add 1.11
+juliaup default 1.10
 
 doas reboot
