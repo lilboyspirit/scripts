@@ -36,7 +36,7 @@ echo 'exec dwm' > $HOME/.xinitrc
 # update system
 doas xbps-install -Suy
 # install other packages
-doas xbps-install -y wget curl juliaup yt-dlp vim firefox vscode
+doas xbps-install -y patch wget curl juliaup yt-dlp vim firefox vscode
 
 doas ln -s /usr/bin/julialauncher /usr/bin/julia
 
