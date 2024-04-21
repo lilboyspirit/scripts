@@ -15,10 +15,6 @@ doas xbps-install -y git rsync make gcc libX11-devel libXft-devel libXinerama-de
 mkdir $HOME/repos/
 cd $HOME/repos
 
-rm -fr dotfiles
-rm -fr dwm
-rm -fr st
-
 git clone https://github.com/lilboyspirit/dotfiles.git
 git clone https://github.com/lilboyspirit/dwm.git
 git clone https://github.com/lilboyspirit/st.git
