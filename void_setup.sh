@@ -17,11 +17,15 @@ cd $HOME/repos
 
 git clone https://github.com/lilboyspirit/dotfiles.git
 git clone https://github.com/lilboyspirit/dwm.git
+git clone https://github.com/lilboyspirit/dmenu.git
 git clone https://github.com/lilboyspirit/st.git
 
 rsync -a --exclude='.git/' --exclude='LICENSE' dotfiles/ $HOME
 
 cd dwm
+doas make clean install
+
+cd ../dmenu
 doas make clean install
 
 cd ../st
