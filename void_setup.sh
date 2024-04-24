@@ -45,5 +45,3 @@ juliaup add 1.0.0
 juliaup add 1.10
 juliaup add 1.11
 juliaup default 1.10
-
-doas reboot
